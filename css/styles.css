@@ -1,0 +1,128 @@
+/* цвет основного текста #757575 */
+/* цвет вторичного текста #212121 */
+/* белый #FFFFFF */
+/* цвет акцента #2196F3 */
+/* белый прозрачный в футере rgba(255, 255, 255, 0.6) */
+/* черный в logo #000000 */
+/* вторичный цвет фона #F5F4FA */
+/* основной цвет фона #FFFFFF */
+/* цвет фона героя и футера #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --btn-white-color: #ffffff;
+  --btn-grey-color: #f5f4fa;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo header */
+.logo-header {
+  color: #2196f3;
+}
+
+.logo-header:hover,
+.logo-header:focus {
+  color: #000000;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+/* Site */
+.site-contacts .link {
+  color: var(--primary-text-color);
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+}
+
+/* Advantages */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.advantages .title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+.cooperators .cooperator {
+  color: var(--title-text-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+
+.address-map {
+  color: #ffffff;
+}
+
+.address-mail,
+.address-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-mail:hover,
+.address-mail:focus,
+.address-tel:hover,
+.address-tel:focus {
+  color: #000000;
+}
+
+/* Button */
+.button {
+  color: var(--title-text-color--);
+  background-color: var(--btn-white-color);
+}
+
+.button.primary {
+  color: var(--btn-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--title-text-color--);
+  background-color: var(--btn-grey-color);
+}
+
+/* Стили Портфолио */
