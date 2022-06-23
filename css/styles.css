@@ -121,8 +121,16 @@ body {
 }
 
 .button.secondary {
-  color: var(--title-text-color--);
+  color: var(--title-text-color);
   background-color: var(--btn-grey-color);
 }
 
 /* Стили Портфолио */
+
+/* Меню услуг */
+
+.menu .button:hover,
+.menu .button:focus {
+  color: var(--btn-white-color);
+  background-color: var(--accent-color);
+}
