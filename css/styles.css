@@ -127,10 +127,12 @@ body {
 
 /* Стили Портфолио */
 
-/* Меню услуг */
+/* Меню работ */
 
-.menu .button:hover,
-.menu .button:focus {
+.filter-title {
+  color: var(--title-text-color);
+}
+.menu .button:hover {
   color: var(--btn-white-color);
   background-color: var(--accent-color);
 }
