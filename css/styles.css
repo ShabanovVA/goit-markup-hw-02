@@ -206,8 +206,11 @@ body {
   color: var(--title-text-color--);
   background-color: var(--btn-white-color);
   cursor: pointer;
-
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
 }
 
 .button.primary {
@@ -234,7 +237,23 @@ body {
   color: var(--btn-white-color);
   background-color: var(--accent-color);
 }
-
-.work-title {
+/* Примеры работ */
+/* Почему подчеркивает названия? */
+.list-title {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.list .name {
+  color: var(--primary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  text-decoration: none;
 }
