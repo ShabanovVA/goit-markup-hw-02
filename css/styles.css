@@ -12,8 +12,11 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --btn-white-color: #ffffff;
+  --white-color: #ffffff;
   --btn-grey-color: #f5f4fa;
+  --logo-black-color: #000000;
+  --bgc-header-color: #2f303a;
+  --address-footer-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -34,7 +37,7 @@ body {
 
 /* Logo header */
 .logo-header {
-  color: #000000;
+  color: var(--logo-black-color);
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -44,14 +47,12 @@ body {
 }
 
 .web {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Ховер и фокус работают криво. Что подправить? */
 .logo-header:hover,
-.logo-header:focus,
-.web:hover,
-.web:focus {
-  color: #000000;
+.web:hover {
+  color: var(--logo-black-color);
 }
 
 /* Site nav */
@@ -71,7 +72,7 @@ body {
 }
 
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Site */
@@ -92,11 +93,15 @@ body {
 
 /* Hero */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bgc-header-color);
+}
+
+.hide {
+  visibility: hidden;
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--white-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -143,30 +148,28 @@ body {
 
 /* Team */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--btn-grey-color);
 }
 .cooperators .cooperator {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
 }
 
 .cooperators .post {
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
 }
 
 /* Footer */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bgc-header-color);
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--white-color);
 
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -178,19 +181,17 @@ body {
 
 /* Ховер и фокус работают криво. Что подправить? */
 .logo-footer:hover,
-.logo-footer:focus,
-.web:hover,
-.web:focus {
-  color: #000000;
+.web:hover {
+  color: var(--logo-black-color);
 }
 
-.address-map {
-  color: #ffffff;
+.address {
+  color: var(--white-color);
 }
 
 .address-mail,
 .address-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--address-footer-color);
   text-decoration: none;
 }
 
@@ -198,13 +199,13 @@ body {
 .address-mail:focus,
 .address-tel:hover,
 .address-tel:focus {
-  color: #000000;
+  color: var(--logo-black-color);
 }
 
 /* Button */
 .button {
   color: var(--title-text-color--);
-  background-color: var(--btn-white-color);
+  background-color: var(--white-color);
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -214,7 +215,7 @@ body {
 }
 
 .button.primary {
-  color: var(--btn-white-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -234,7 +235,7 @@ body {
 }
 .menu .button:hover,
 .menu .button:focus {
-  color: var(--btn-white-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 /* Примеры работ */
@@ -252,7 +253,6 @@ body {
 .list .name {
   color: var(--primary-text-color);
 
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
